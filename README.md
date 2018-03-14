@@ -28,7 +28,9 @@ There is no predefined function in python packages to view 3D images using 3D ax
 
 ### Skull Stripping
 
-**FSL** is a library used for analysis and manipulation of MRI brain imaging data.**Nipype** provides an interface to use the **FSL** library via python code.Thus this is used to skull strip the images in the given code.The *frac* parameter is used to pass values for the fractional intensity threshold.A smaller value will give a much better estimate of the brain at the cost of lesser stripping.A slice of a sample image has been displayed after skull stripping it with different *frac* values has been given below
+**FSL** is a library used for analysis and manipulation of MRI brain imaging data.**Nipype** provides an interface to use the **FSL** library via python code.Thus this is used to skull strip the images in the given code.The *frac* parameter is used to pass values for the fractional intensity threshold.A smaller value will give a much better estimate of the brain at the cost of lesser stripping.A sample image has been displayed below after skull stripping it with different *frac* values.
+
+![Alt text](https://github.com/RishalAggarwal/3D-Convnet-for-Alzheimer-s-Detection/blob/master/3D%20Convolutional%20Network%20for%20Alzheimer's%20Detection/brainscan/normal.gif) ![Alt text]()
 
 ### Histogram Thresholding & Segmentation
 
