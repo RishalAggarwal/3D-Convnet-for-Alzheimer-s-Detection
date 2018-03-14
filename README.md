@@ -32,15 +32,15 @@ There is no predefined function in python packages to view 3D images using 3D ax
 
 ![Alt text](https://github.com/RishalAggarwal/3D-Convnet-for-Alzheimer-s-Detection/blob/master/3D%20Convolutional%20Network%20for%20Alzheimer's%20Detection/brainscan/normal.gif) 
 
-                      frac=0.0
+                        frac=0.0
 
 ![Alt text](https://github.com/RishalAggarwal/3D-Convnet-for-Alzheimer-s-Detection/blob/master/3D%20Convolutional%20Network%20for%20Alzheimer's%20Detection/brainscan/ss02.gif) 
 
-                      frac=0.2
+                        frac=0.2
 
 ![Alt text](https://github.com/RishalAggarwal/3D-Convnet-for-Alzheimer-s-Detection/blob/master/3D%20Convolutional%20Network%20for%20Alzheimer's%20Detection/brainscan/ss05.gif)
 
-                      frac=0.5
+                        frac=0.5
 
 ### Histogram Thresholding & Segmentation
 
@@ -60,11 +60,11 @@ All the images are resized to the same dimensions using the predefined skimage t
 
 ## 3D CNN
 
-A 3D convolutional neural network has been defined using *Tflearn* which basically serves to provide wrapper functions for the tensorflow framework thus making it easier to create the network.The network uses mini batch gradient descent with batch normalisation for each activation layer.It uses dropout and L2 regularisation to tackle high variance and is optimised by the adam optimiser.It is designed for a 3 classification task with the classes as AD (Alzheimer's Disease), MCI(Mild Cognitive Impairment) and NL(normal). The layers for the network have been defined as per the table given below.The total number of parameters in this network is .
+A 3D convolutional neural network has been defined using *Tflearn* which basically serves to provide wrapper functions for the tensorflow framework thus making it easier to create the network.The network uses mini batch gradient descent with batch normalisation for each activation layer.It uses dropout and L2 regularisation to tackle high variance and is optimised by the adam optimiser.It is designed for a 3 classification task with the classes as AD (Alzheimer's Disease), MCI(Mild Cognitive Impairment) and NL(normal). The layers for the network have been defined as per the table given below.The total number of parameters in this network is 7,670,960.
 
-![Alt text]()
+![Alt text](https://github.com/RishalAggarwal/3D-Convnet-for-Alzheimer-s-Detection/blob/master/3D%20Convolutional%20Network%20for%20Alzheimer's%20Detection/cnn%20table.png)
 
 ## What's Next
 
-Training a 3D CNN for an end to end task like this is practically possible yet extremely difficult. Through such a procedure if the CNN is very Deep it's likely to overfit and if it's too shallow it's likely to underfit. This is largely due to the scarcity of the data as well as complexity of the problem. However the most successful approach has been to train the network on an 3D autoencoder as mentioned in thes paper: [ Predicting Alzheimer’s disease: a neuroimaging study with 3D convolutional neural networks](https://arxiv.org/pdf/1502.02506.pdf).All this has been done on an 8GB RAM CPU laptop along with google colaboratory for network training. Anyhow this project cannot move further due to lack of computational resources and is thus at a standstill for a time in the future.
+Training a 3D CNN for an end to end task like this is practically possible yet extremely difficult. Through such a procedure if the CNN is very Deep it's likely to overfit and if it's too shallow it's likely to underfit, it will only be able to mark boundaries satisfactorily if enough data is fed for training. This is largely due to the complexity of the problem.Alternatively the most successful approach has been to train the network on an 3D autoencoder as mentioned in thes paper: [ Predicting Alzheimer’s disease: a neuroimaging study with 3D convolutional neural networks](https://arxiv.org/pdf/1502.02506.pdf).All this has been done on an 8GB RAM CPU laptop along with google colaboratory for network training. Anyhow this project cannot move further due to lack of computational resources and is thus at a standstill for a time in the future.
 
