@@ -60,8 +60,9 @@ All the images are resized to the same dimensions using the predefined skimage t
 
 ## 3D CNN
 
-A 3D convolutional neural network has been defined using *Tflearn* which basically serves to provide wrapper functions for the tensorflow framework thus making it easier to create the network.The network uses mini batch gradient descent with batch normalisation for each activation layer.It uses dropout and L2 regularisation to tackle high variance and is optimised by the adam optimiser.
+A 3D convolutional neural network has been defined using *Tflearn* which basically serves to provide wrapper functions for the tensorflow framework thus making it easier to create the network.The network uses mini batch gradient descent with batch normalisation for each activation layer.It uses dropout and L2 regularisation to tackle high variance and is optimised by the adam optimiser.It is designed for a 3 classification task with the classes as AD (Alzheimer's Disease), MCI(Mild Cognitive Impairment) and NL(normal). The layers for the network have been defined as per the table given below.The total number of parameters in this network is .
 
+![Alt text]()
 
 ## What's Next
 
