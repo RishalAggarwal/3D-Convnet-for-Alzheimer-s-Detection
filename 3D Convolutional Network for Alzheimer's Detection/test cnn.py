@@ -46,4 +46,4 @@ model = tflearn.DNN(net, checkpoint_path = 'drive/model/model.tfl.ckpt',max_chec
 ckpt='path_to_latest_checkpoint'
 model.load(ckpt)                                                                                                #loading checkpoints
 
-model.evaluate(datanp,truenp)                                                                                   #evaluating the model returns test accuracy
+model.evaluate(datanp,truenp)                                                                                   #evaluating the model, returns test accuracy
