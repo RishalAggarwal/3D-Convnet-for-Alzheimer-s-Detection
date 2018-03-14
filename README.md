@@ -22,6 +22,8 @@ The first step is to load the data into Numpy arrays for futrher manipulation.Th
 
 ### Visualisation
 
+There is no predefined function in python packages to view 3D images using 3D axis however slice by slice visualisation can be done using **matplotlib**.Slice by slice visualisation can take place without manual input of the depth value using the method given [here](https://www.datacamp.com/community/tutorials/matplotlib-3d-volumetric-data).The same method is adopted above however the slice values are increased by tapping 'Q' and decreased by tapping 'A'.The gif below shows this form of visualisation.
+
 ### Skull Stripping
 
 **FSL** is a library used for analysis and manipulation of MRI brain imaging data.**Nipype** provides an interface to use the **FSL** library via python code.Thus this is used to skull strip the images in the given code.The *frac* parameter is used to pass values for the fractional intensity threshold.A smaller value will give a much better estimate of the brain at the cost of lesser stripping.A slice of a sample image has been displayed after skull stripping it with different *frac* values has been given below
@@ -33,6 +35,8 @@ An approximation of the amount of grey matter,white matter and CSF(Cerebrospinal
 ![Alt text](https://i.stack.imgur.com/xnGKm.jpg)
 
 There's no predefined function for this in python packages therefore the code for it has been written firsthand in python. A sample of the thresholds derived in a skull stripped images are given in the histogram below. 
+
+![Alt text](https://github.com/RishalAggarwal/3D-Convnet-for-Alzheimer-s-Detection/blob/master/3D%20Convolutional%20Network%20for%20Alzheimer's%20Detection/histogram/Figure_1.png)
 
 This is a form of global thresholding however better approximations can be made using adaptive and dynamic forms of thresholding where parts of the image are segmented at a time.
 
