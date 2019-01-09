@@ -64,6 +64,8 @@ A 3D convolutional neural network has been defined using *Tflearn* which basical
 
 ![Alt text](https://github.com/RishalAggarwal/3D-Convnet-for-Alzheimer-s-Detection/blob/master/3D%20Convolutional%20Network%20for%20Alzheimer's%20Detection/cnn%20table.png)
 
+However the above network doesn't learn the deep features well enough therefore for experimentation purposes a Resnet network with 3D convolutions was used in hope of better feature learning due to it's shortcut connections. The Renet showed better performance but it wasn't significant.
+
 ## What's Next
 
 Training a 3D CNN for an end to end task like this is practically possible yet extremely difficult. Through such a procedure if the CNN is very Deep it's likely to overfit and if it's too shallow it's likely to underfit, it will only be able to mark boundaries satisfactorily if enough data is fed and region of interest localisation is done for training. This is largely due to the complexity of the problem.Alternatively the most successful approach has been to train the network on an 3D autoencoder as mentioned in thes paper: [ Predicting Alzheimer’s disease: a neuroimaging study with 3D convolutional neural networks](https://arxiv.org/pdf/1502.02506.pdf).All this has been done on an 8GB RAM CPU laptop along with google colaboratory for network training.
